@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="user-first">User First Name</label>
+                        <input type="text" class="form-control" id="user-first">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="user-last">User Last Name</label>
+                        <input type="text" class="form-control" id="user-last">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <!-- <label for="state">State</label>
+                        <input type="dropdown" class="form-control" id="state"> -->
+                            <!-- <select class="form-control" id="state"> -->
+                                <!-- <option value="">Choose Your State</option>
+                            </select> -->
+                            <label for="state">Select a State:</label>
+                            <select id="state">
+                                <!-- <option value="">Select a State</option>
+                                <option value="">Alabama</option> -->
+                                <!-- What if I changed that to an empty string or field? -->
+                            </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <!-- <div class="form-group">
+                        <label for="preferred-games">What Games Do You Want to Connect With Others On?</label>
+                        <input type="text" class="form-control" id="preferred-games" placeholder="Preferred Games">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="preferred-games">What Games Do You Want to Connect With Others On?</label>
+                        <select class="form-control" id="preferred-games">
+                            <option value="">Select a Game</option>
+                        </select>
+                        <!-- Button Currently not working as intended. -->
+                        <input type="text" class="form-control" id="new-game" placeholder="Enter a New Game">
+                        <button id="add-game" class="btn btn-primary">Add Game</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>User</th>
+                <th>Date Registered</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Preferred Games</th>
+            </tr>
+        </table>
+
+        <script src="Guest List 3.js"></script>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
+</body>
+</html>
